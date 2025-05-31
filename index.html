@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniversário Ana</title>
-</head>
-<body>
-    <h1>teste do aniersario</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Aniversário Ana</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <!-- Formulário de boas-vindas -->
+        <div id="welcome-container" class="welcome-container">
+            <form id="welcome-form">
+                <label for="username">Digite seu nome para entrar:</label><br />
+                <input type="text" id="username" name="username"
+                    placeholder="Seu nome" required />
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <!-- Mensagem de boas-vindas personalizada (inicialmente escondida) -->
+        <div id="welcome-message" class="welcome-message" style="display:none;">
+            <!-- O nome será inserido aqui via JS -->
+        </div>
+
+        <header class="titulo-principal">
+            <h1>Ana Julia</h1>
+            <img src="images/image1.jpg" alt="Foto de perfil" />
+        </header>
+
+        <div class="caixa">
+            <h2>O que você irá achar sobre mim:</h2>
+            <ul>
+                <li><a href="#descricao">Um pouco de mim</a></li>
+                <li><a href="#galeria">Galeria de Fotos</a> </li>
+                <li><a href="#rodape-final">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="caixa" id="descricao">
+            <h3>Descrição:</h3>
+            <p id="texto-descricao">
+                Olá, pessoal!
+                Meu nome é Ana Julia e estou vivendo um dos momentos mais
+                emocionantes da minha vida. Desde pequena, sempre sonhei com o
+                dia em que completaria 15 anos — e agora, esse sonho está
+                prestes a se tornar realidade! 💕✨<br>
+
+                Faltam apenas alguns dias para a minha tão esperada festa, e não
+                consigo esconder a alegria que transborda no meu coração. Sinto
+                um friozinho na barriga só de imaginar cada detalhe desse dia
+                especial. Tudo está sendo preparado com muito amor e dedicação,
+                porque mais do que uma comemoração, essa festa representa um
+                marco inesquecível na minha história.<br>
+
+                Completar 15 anos é um símbolo de crescimento, de transformação
+                e de novos horizontes. É o momento em que deixo para trás a
+                infância com gratidão e dou os primeiros passos rumo à juventude
+                com esperança, coragem e brilho nos olhos. 🌸<br>
+
+                A expectativa é grande, os sonhos são muitos e a emoção é
+                indescritível. Estou cercada por pessoas que amo, que torcem por
+                mim e que fazem parte da minha caminhada até aqui. Quero que
+                cada sorriso, cada abraço e cada instante vivido nessa data se
+                torne uma lembrança eterna no meu coração.<br>
+
+                Sou grata por tudo o que vivi até agora e ainda mais animada com
+                tudo o que está por vir. Essa é uma fase linda, cheia de
+                descobertas, aprendizados e novas possibilidades — e eu estou
+                pronta para viver tudo isso com intensidade, alegria e amor.<br>
+
+                Obrigada por fazerem parte desse momento tão especial!
+                💖<br><br>
+                Com carinho,<br>
+                Ana Julia
+            </p>
+        </div>
+
+        <div class="galeria-container">
+            <h2>Galeria de Momentos</h2>
+            <div class="galeria" id="galeria">
+                <img src="images/image3.jpg" alt="Foto 1">
+                <img src="images/image4.jpg" alt="Foto 2">
+                <img src="images/image5.jpg" alt="Foto 3">
+                <img src="images/image6.jpg" alt="Foto 4">
+                <img src="images/image7.jpg" alt="Foto 5">
+                <img src="images/image2.jpg" alt="Foto 6">
+                <img src="images/image9.jpg" alt="Foto 7">
+                <img src="images/image10.jpg" alt="Foto 8">
+                <img src="images/image11.jpg" alt="Foto 9">
+                <img src="images/image12.jpg" alt="Foto 10">
+            </div>
+        </div>
+
+        <div class="caixa">
+            <h2>Agora o mais importante:</h2>
+            <ul>
+                <li><a href="pages/convite.html">Convite</a></li>
+            </ul>
+        </div>
+
+        <footer class="rodape" id="rodape-final">
+            <img src="images/image2.jpg" class="imagem-perfil"
+                alt="Foto Secundaria" />
+            <p>© 2025 Ana Julia de Lima Melo. Todos os direitos reservados.</p>
+            <p>
+                Siga-me nas redes sociais:
+                <a href="https://www.instagram.com/_ana_julia0208/"
+                    target="_blank">Instagram</a> |
+                <br /><br />Foz do Iguacu - PR
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
